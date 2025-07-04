@@ -1,0 +1,155 @@
+/* ===== Reusable Section Titles ===== */
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #00ffc3;
+  margin: 0.5rem auto 0;
+}
+
+/* ===== Pricing Cards (Signals Page) ===== */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pricing-card {
+  background: #161b22;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #00ffc3;
+  box-shadow: 0 0 20px rgba(0, 255, 195, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-card h3 {
+  color: #00ffc3;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.pricing-card ul li {
+  margin: 0.5rem 0;
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+.pricing-card .btn {
+  margin-top: 1rem;
+}
+
+/* ===== Courses Section ===== */
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.course-item {
+  background: #1a1f27;
+  padding: 2rem;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 195, 0.05);
+}
+
+.course-item h3 {
+  color: #00ffc3;
+  margin-bottom: 0.5rem;
+}
+
+.course-item p {
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+/* ===== Blog Section ===== */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-card {
+  background: #161b22;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.blog-card:hover {
+  box-shadow: 0 0 10px rgba(0, 255, 195, 0.1);
+}
+
+.blog-card h4 {
+  margin-bottom: 0.5rem;
+  color: #00ffc3;
+}
+
+.blog-card p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* ===== Contact Page Form ===== */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background: #161b22;
+  border-radius: 12px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 1rem 0 0.3rem;
+  color: #f1f1f1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: #0d1117;
+  color: #eee;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #00ffc3;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #00d0a8;
+}
